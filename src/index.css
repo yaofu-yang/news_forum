@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+.header {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align:center;
+}
+
+.commentHeader {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align:center;
+}
+
+.postBody{
+    width: 70%;
+}
+
+.post {
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.rightCorner {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.postTitle{
+    color: #154f8a;
+}
+
+.linkButton {
+    display: inline;
+    color: rgba(94, 113, 149, 0.979);
+    margin-right: 15px;
+}
+
+.linkButton:hover {
+    color:#154f8a
+}
+
+.postCornerName {
+    display: inline;
+    color: rgba(94, 113, 149, 0.979);
+    margin-right: 15px;
+    text-align: right;
+}
+
+.postCornerTime {
+    color: rgba(94, 113, 149, 0.979);
+    display: inline;
+    text-align: right;
+}
+
+.postBody{
+    width: 90%;
+    height: 100%;
+    margin: 30px 20px;
+    padding: 20px 30px;
+}
+
+.authorDetail {
+    margin: 10px 20px;
+    padding: 5px 15px;
+}
+
+.comment {
+    height:max-content;
+    margin: 30px 20px;
+    background-color: rgba(184, 183, 183, 0.815);
+    border-radius: 8px;
+    padding: 10px 10px;
+    position: relative;
+}
+.btnGroup {
+    margin: 30px 20px;
+    padding: 10px 10px;
+}
+
+form {
+    margin: 30px 20px;
+}
+
+.commentAuthor {
+    padding: 5px 5px;
+}
+
+.commentBody {
+    padding: 5px 5px;
+}
+
+.postDetailCornerTime {
+    padding: 5px 5px;
+    color: rgba(102, 101, 101, 0.89)
+}
+
+@media only screen and (max-width: 414px) {
+    .post {
+        border: 2px solid rgb(173, 173, 173);
+        border-radius: 15px;
+        margin: 15px;
+        padding: 10px 15px;
+    }
+
+    .linkButton {
+        display: block;
+        color: rgba(94, 113, 149, 0.979);
+        margin-right: 15px;
+    }
+
+    .rightCorner {
+        display:block;
+        position:none;
+        position:relative;
+    }
+
+}
