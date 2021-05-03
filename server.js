@@ -1,18 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-// const cors = require('cors');
 
 const postRouter = require('./routes/post_controller');
 
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
-
-// Local MongoDB --> For testing purposes.
-// const mongoEndpoint = 'mongodb://127.0.0.1/news_posts'
-
-// Cloud Atlast MongoDB_URI  --> Should remove later.
-// const mongoEndpoint = 'mongodb+srv://devUser:devPassword@webdevcluster.xv0sv.mongodb.net/news_posts?retryWrites=true&w=majority'
 
 // Connects to Cloud Atlas URI via Heroku. Use this in final submission.
 const mongoEndpoint = process.env.MONGODB_URI || 'mongodb://127.0.0.1/news_posts';
@@ -26,13 +19,6 @@ db.on('error', console.error.bind(console, 'Error connecting to MongoDB'));
 
 
 app.use(express.static(path.join(__dirname, 'build')));
-
-// Bandaid fix for cors, but not secure.
-// Will ask Hunter or TAs about fixes later
-// app.use(cors({
-//     origin: '*',
-// }));
-
 app.use(cookieParser());
 
 app.use(express.json());
