@@ -22,7 +22,7 @@ export default class NavigationBar extends React.Component {
         } else {
             return (
                 <Navbar collapseOnSelect fixed='top' expand='sm' bg="dark" variant="dark">
-                    <Navbar.Brand href="/">Hacky News</Navbar.Brand>
+                    <Navbar.Brand href="/">Salty News</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                     <Navbar.Collapse id='responsive-navbar-nav'>
                             <Nav className="mr-auto">
